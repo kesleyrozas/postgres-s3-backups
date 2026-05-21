@@ -8,9 +8,9 @@ services:
     dockerfilePath: ./Dockerfile
     autoDeploy: false
     envVars:
-      - key: DATABASE_URL
+      - key: postgresql://escolabelos:mFLgiPCRnR6wy5cN6GrmnbvNMzBJHiLa@dpg-d7m0b8svikkc73fn27f0-a.oregon-postgres.render.com/escolabelos
         fromDatabase:
-          name: replace-with-your-postgres-instance-name
+          name: dpg-d7m0b8svikkc73fn27f0-a
           property: connectionString
       # pick the region closest to your database
       # For example, us-west-2 for the Oregon region
