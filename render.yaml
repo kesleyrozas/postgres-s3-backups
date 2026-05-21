@@ -9,9 +9,7 @@ services:
     autoDeploy: false
     envVars:
       - key: DATABASE_URL
-        fromDatabase:
-          name: postgresql://escolabelos:mFLgiPCRnR6wy5cN6GrmnbvNMzBJHiLa@dpg-d7m0b8svikkc73fn27f0-a/escolabelos
-          property: connectionString
+        value: postgresql://escolabelos:mFLgiPCRnR6wy5cN6GrmnbvNMzBJHiLa@dpg-d7m0b8svikkc73fn27f0-a/escolabelos
       # pick the region closest to your database
       # For example, us-west-2 for the Oregon region
       - key: AWS_REGION
